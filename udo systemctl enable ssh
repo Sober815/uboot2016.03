@@ -1,0 +1,21 @@
+[0;1;32m●[0m ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Sun 2026-04-12 23:57:49 EDT; 4h 48min ago
+  Process: 15172 ExecReload=/bin/kill -HUP $MAINPID (code=exited, status=0/SUCCESS)
+  Process: 15168 ExecReload=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+  Process: 1228 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 1267 (sshd)
+    Tasks: 1 (limit: 9448)
+   CGroup: /system.slice/ssh.service
+           └─1267 /usr/sbin/sshd -D
+
+Apr 13 02:42:10 100ask sshd[1267]: Received SIGHUP; restarting.
+Apr 13 02:42:10 100ask sshd[1267]: Server listening on 0.0.0.0 port 22.
+Apr 13 02:42:10 100ask sshd[1267]: Server listening on :: port 22.
+Apr 13 02:42:10 100ask systemd[1]: Reloading OpenBSD Secure Shell server.
+Apr 13 02:42:10 100ask sshd[1267]: Received SIGHUP; restarting.
+Apr 13 02:42:10 100ask systemd[1]: Reloaded OpenBSD Secure Shell server.
+Apr 13 02:42:10 100ask sshd[1267]: Server listening on 0.0.0.0 port 22.
+Apr 13 02:42:10 100ask sshd[1267]: Server listening on :: port 22.
+Apr 13 04:44:44 100ask sshd[37508]: Accepted password for book from 192.168.149.1 port 27149 ssh2
+Apr 13 04:44:44 100ask sshd[37508]: pam_unix(sshd:session): session opened for user book by (uid=0)

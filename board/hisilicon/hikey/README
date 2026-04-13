@@ -59,8 +59,8 @@ Get the BL30 mcu binary.
   > ln -s ../bin/bl1-hikey.bin bl1.bin
   > ln -s ../bin/fip-hikey.bin fip.bin
 
-  > arm-linux-gnueabihf-gcc -c -o start.o start.S
-  > arm-linux-gnueabihf-gcc -c -o debug.o debug.S
+  > arm-buildroot-linux-gnueabihf-gcc -c -o start.o start.S
+  > arm-buildroot-linux-gnueabihf-gcc -c -o debug.o debug.S
   > arm-linux-gnueabihf-ld -Bstatic -Tl-loader.lds -Ttext 0xf9800800 start.o debug.o -o loader
   > arm-linux-gnueabihf-objcopy -O binary loader temp
   > python gen_loader.py -o ../bin/l-loader.bin --img_loader=temp --img_bl1=bl1.bin

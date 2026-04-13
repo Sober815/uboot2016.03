@@ -62,7 +62,7 @@ class Toolchain:
         self.path = os.path.dirname(fname)
 
         # Find the CROSS_COMPILE prefix to use for U-Boot. For example,
-        # 'arm-linux-gnueabihf-gcc' turns into 'arm-linux-gnueabihf-'.
+        # 'arm-buildroot-linux-gnueabihf-gcc' turns into 'arm-buildroot-linux-gnueabihf-'.
         basename = os.path.basename(fname)
         pos = basename.rfind('-')
         self.cross = basename[:pos + 1] if pos != -1 else ''

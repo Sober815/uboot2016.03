@@ -55,4 +55,4 @@ try_both() {
 # board arch soc path-to-gcc
 try_both sandbox sandbox - gcc
 try_both coreboot x86 - x86_64-linux-gnu-gcc
-try_both seaboard arm tegra20 /opt/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.08_linux/bin/arm-linux-gnueabihf-gcc
+try_both seaboard arm tegra20 /opt/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.08_linux/bin/arm-buildroot-linux-gnueabihf-gcc

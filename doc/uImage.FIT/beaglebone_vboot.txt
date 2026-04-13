@@ -59,7 +59,7 @@ a. Set up the environment variable to point to your toolchain. You will need
 this for U-Boot and also for the kernel if you build it. For example if you
 installed a Linaro version manually it might be something like:
 
-   export CROSS_COMPILE=/opt/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.08_linux/bin/arm-linux-gnueabihf-
+   export CROSS_COMPILE=/opt/linaro/gcc-linaro-arm-buildroot-linux-gnueabihf-4.8-2013.08_linux/bin/arm-buildroot-linux-gnueabihf-
 
 or if you just installed gcc-arm-linux-gnueabi then it might be
 
