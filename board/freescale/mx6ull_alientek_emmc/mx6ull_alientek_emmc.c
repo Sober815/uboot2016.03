@@ -562,7 +562,7 @@ static iomux_v3_cfg_t const fec1_pads[] = {
 };
 
 static iomux_v3_cfg_t const fec2_pads[] = {
-/*	MX6_PAD_GPIO1_IO06__ENET2_MDIO | MUX_PAD_CTRL(MDIO_PAD_CTRL),*/
+	MX6_PAD_GPIO1_IO06__ENET2_MDIO | MUX_PAD_CTRL(MDIO_PAD_CTRL),
 	MX6_PAD_GPIO1_IO07__ENET2_MDC | MUX_PAD_CTRL(ENET_PAD_CTRL),
 
 	MX6_PAD_ENET2_TX_DATA0__ENET2_TDATA00 | MUX_PAD_CTRL(ENET_PAD_CTRL),
@@ -593,6 +593,7 @@ static void setup_iomux_fec(int fec_id)
 		mdelay(100);
 		gpio_set_value(ENET2_RESET, 1);
 	}
+	mdelay(100);
 }
 
 int board_eth_init(bd_t *bis)
